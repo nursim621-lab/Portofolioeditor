@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Muhammad Fadhil — Penulis & Editor Naskah</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  :root{
+    --navy:#0E2036;
+    --navy-2:#1C3A5E;
+    --gold:#C89A3D;
+    --gold-soft:#E0BD6B;
+    --accent:#C1512E;
+    --paper:#F6F5F1;
+    --paper-2:#EFEDE6;
+    --ink:#141B26;
+  }
+  *{box-sizing:border-box}
+  html{scroll-padding-top:24px}
+  body{
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Inter',sans-serif;
+    padding-top:env(safe-area-inset-top,0px);
+    padding-bottom:env(safe-area-inset-bottom,0px);
+  }
+  .serif{font-family:'Fraunces',serif}
+  .rule{height:1px;background:linear-gradient(90deg,var(--gold) 0%,transparent 70%)}
+  .rule-full{height:1px;background:var(--navy);opacity:.12}
+  .badge{
+    border:1px solid var(--navy);
+    color:var(--navy);
+    font-size:.8rem;
+    padding:.4rem .85rem;
+    display:inline-block;
+  }
+  .card{
+    border:1px solid var(--navy);
+    background:transparent;
+    border-top:3px solid var(--gold);
+  }
+  .num{
+    font-family:'Fraunces',serif;
+    color:var(--accent);
+    font-style:italic;
+  }
+  @keyframes riseIn{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
+  .rise{animation:riseIn .8s ease-out both}
+  .rise-1{animation-delay:.05s}
+  .rise-2{animation-delay:.2s}
+  .rise-3{animation-delay:.35s}
+  @media (prefers-reduced-motion: reduce){
+    .rise{animation:none}
+  }
+  a.underline-grow{
+    background-image:linear-gradient(var(--gold),var(--gold));
+    background-position:0 100%;
+    background-repeat:no-repeat;
+    background-size:0% 1px;
+    transition:background-size .3s ease;
+  }
+  a.underline-grow:hover{background-size:100% 1px}
+  .navy-block{background:var(--navy);position:relative;overflow:hidden}
+  .navy-block .rule-full{background:var(--gold-soft);opacity:.25}
+  .dot-grid{
+    position:absolute; inset:0; pointer-events:none;
+    background-image:radial-gradient(var(--gold-soft) 1px, transparent 1px);
+    background-size:22px 22px; opacity:.10;
+  }
+  .glow{position:absolute; border-radius:50%; filter:blur(60px); pointer-events:none}
+  .badge-dark{border:1px solid var(--gold-soft); color:var(--gold-soft); font-size:.8rem; padding:.4rem .85rem; display:inline-block}
+</style>
+</head>
+<body class="antialiased">
+
+<!-- NAV -->
+<header class="fixed top-0 left-0 right-0 z-30 bg-[var(--paper)]/90 backdrop-blur border-b border-[var(--navy)]/10" style="padding-top:env(safe-area-inset-top,0px)">
+  <div class="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
+    <span class="serif text-lg tracking-wide" style="color:var(--navy)">Muhammad Fadhil</span>
+    <nav class="hidden sm:flex gap-8 text-sm" style="color:var(--navy)">
+      <a href="#about" class="underline-grow">Tentang</a>
+      <a href="#work" class="underline-grow">Pengalaman</a>
+      <a href="#skills" class="underline-grow">Keahlian</a>
+      <a href="#documents" class="underline-grow">Dokumen</a>
+      <a href="#contact" class="underline-grow">Kontak</a>
+    </nav>
+    <a href="#contact" class="text-sm px-4 py-2 border" style="border-color:var(--navy);color:var(--navy)">Hubungi</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="navy-block">
+  <div class="dot-grid"></div>
+  <div class="glow" style="width:420px;height:420px;background:var(--gold);opacity:.18;top:-120px;right:-100px"></div>
+  <div class="glow" style="width:280px;height:280px;background:var(--gold-soft);opacity:.12;bottom:-100px;left:-60px"></div>
+  <div class="max-w-5xl mx-auto px-6 pt-32 pb-20 relative grid sm:grid-cols-[1fr_auto] gap-10 items-center">
+    <div>
+      <p class="rise text-sm tracking-wide mb-4 flex items-center gap-2" style="color:var(--gold-soft)">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+        Penulis · Editor Naskah Akademik & Kreatif
+      </p>
+      <h1 class="rise rise-1 serif text-4xl sm:text-6xl leading-[1.08]" style="color:var(--paper)">
+        Merapikan <span style="color:var(--accent)">kata</span>,<br class="hidden sm:block"> menjaga makna tetap utuh.
+      </h1>
+      <p class="rise rise-2 mt-6 max-w-xl text-base sm:text-lg" style="color:#C7D2E0">
+        Mahasiswa pascasarjana dengan pengalaman menyunting naskah akademik dan kreatif berbahasa Indonesia — teliti pada setiap ejaan, runtut pada setiap struktur, dan terbiasa bekerja dalam alur revisi bertahap hingga tenggat terpenuhi.
+      </p>
+      <div class="rise rise-3 mt-8 flex flex-wrap gap-4">
+        <a href="#contact" class="px-6 py-3 text-sm" style="background:var(--accent);color:var(--paper)">Lihat Kontak Saya</a>
+        <a href="mailto:nursim621@gmail.com" class="px-6 py-3 text-sm border" style="border-color:var(--gold-soft);color:var(--paper)">nursim621@gmail.com</a>
+      </div>
+    </div>
+    <div class="rise rise-2 hidden sm:flex items-center justify-center" style="width:180px;height:180px">
+      <span class="serif" style="font-size:11rem;line-height:1;color:var(--gold);opacity:.9">&ldquo;</span>
+    </div>
+  </div>
+  <div class="max-w-5xl mx-auto px-6 relative"><div class="rule-full"></div></div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="max-w-5xl mx-auto px-6 py-16 grid sm:grid-cols-3 gap-10">
+  <h2 class="serif text-2xl" style="color:var(--navy)">Tentang Saya</h2>
+  <div class="sm:col-span-2 space-y-5 text-[15px] leading-relaxed" style="color:var(--navy-2)">
+    <p>Saya Muhammad Fadhil, mahasiswa Magister di UIN Ar-Raniry, Banda Aceh, dengan fokus riset fikih kontemporer / hukum Islam terapan. Menyelesaikan sarjana di UIN Maulana Malik Ibrahim Malang dengan predikat cumlaude (IPK 3.61, 2025).</p>
+    <p>Di luar dunia akademik, saya aktif menulis esai dan prosa — membedah isu keislaman kontemporer dan merawat cerita menjadi narasi yang jujur dan mudah dicerna. Kombinasi latar akademik dan kebiasaan menulis inilah yang membuat saya terbiasa membaca naskah orang lain dengan teliti: memperbaiki ejaan dan diksi tanpa menghilangkan suara asli penulisnya.</p>
+    <p>Kemahiran berbahasa Indonesia saya diuji resmi lewat UKBI (Uji Kemahiran Berbahasa Indonesia) dengan predikat <span style="color:var(--accent);font-weight:600">Unggul, skor 637</span>, berlaku hingga Juli 2028.</p>
+  </div>
+</section>
+
+<div class="max-w-5xl mx-auto px-6"><div class="rule-full"></div></div>
+
+<!-- EXPERIENCE / PROJECTS -->
+<section id="work" class="max-w-5xl mx-auto px-6 py-16">
+  <h2 class="serif text-2xl mb-10" style="color:var(--navy)">Pengalaman & Karya</h2>
+  <div class="grid sm:grid-cols-2 gap-6">
+
+    <div class="card p-6">
+      <p class="num text-sm">01</p>
+      <h3 class="serif text-lg mt-2" style="color:var(--navy)">Revisi Naskah Artikel Jurnal</h3>
+      <p class="mt-3 text-sm leading-relaxed" style="color:var(--navy-2)">Jasa revisi naskah artikel ilmiah — memperbaiki ejaan, tanda baca, diksi, dan struktur kalimat agar sesuai kaidah bahasa akademik.</p>
+    </div>
+
+    <div class="card p-6">
+      <p class="num text-sm">02</p>
+      <h3 class="serif text-lg mt-2" style="color:var(--navy)">Penyusunan Dokumen Akademik</h3>
+      <p class="mt-3 text-sm leading-relaxed" style="color:var(--navy-2)">Menyusun dan memformat dokumen pendukung serta proposal riset akademik secara rapi menggunakan Microsoft Word.</p>
+    </div>
+
+    <div class="card p-6">
+      <p class="num text-sm">03</p>
+      <h3 class="serif text-lg mt-2" style="color:var(--navy)">Penulis Terpilih, Medium Kata Batch 23</h3>
+      <p class="mt-3 text-sm leading-relaxed" style="color:var(--navy-2)">Karya "Garis Start di Tanah Kelahiran" terpilih dalam buku antologi <em>Sebelum Benar-Benar Pulang</em>, proyek menulis kolektif Medium Kata (Maret 2026).</p>
+      <div class="mt-4 flex flex-wrap gap-x-4 gap-y-1 text-sm">
+        <a href="https://nursim621-lab.github.io/Portofolioeditor/doc-sertifikat-penulis.html" target="_blank" class="underline-grow" style="color:var(--gold)">Lihat sertifikat</a>
+        <a href="https://nursim621-lab.github.io/Portofolioeditor/doc-garis-start.html" target="_blank" class="underline-grow" style="color:var(--gold)">Baca cerpennya</a>
+      </div>
+    </div>
+
+    <div class="card p-6">
+      <p class="num text-sm">04</p>
+      <h3 class="serif text-lg mt-2" style="color:var(--navy)">Publikasi & Profil Akademik</h3>
+      <p class="mt-3 text-sm leading-relaxed" style="color:var(--navy-2)">Menulis esai populer di Kompasiana dan memiliki profil sitasi akademik yang terindeks di Google Scholar.</p>
+      <div class="mt-4 flex flex-col gap-1 text-sm">
+        <a href="https://scholar.google.co.id/citations?user=t83q-qIAAAAJ" target="_blank" class="underline-grow" style="color:var(--gold)">Profil Google Scholar</a>
+        <a href="https://kompasiana.com/fadilnt9934" target="_blank" class="underline-grow" style="color:var(--gold)">Tulisan di Kompasiana</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="max-w-5xl mx-auto px-6"><div class="rule-full"></div></div>
+
+<!-- SKILLS -->
+<section id="skills" class="navy-block">
+  <div class="dot-grid"></div>
+  <div class="glow" style="width:300px;height:300px;background:var(--gold);opacity:.14;top:-80px;left:60%"></div>
+  <div class="max-w-5xl mx-auto px-6 py-16 relative grid sm:grid-cols-3 gap-10">
+    <h2 class="serif text-2xl" style="color:var(--paper)">Keahlian</h2>
+    <div class="sm:col-span-2 flex flex-wrap gap-3">
+      <a href="https://nursim621-lab.github.io/Portofolioeditor/doc-sertifikat-ukbi.html" target="_blank" class="badge-dark underline-grow">Bahasa Indonesia — UKBI Unggul (637) ↗</a>
+      <span class="badge-dark">Proofreading & Copyediting</span>
+      <span class="badge-dark">Microsoft Word — Tracked Changes</span>
+      <span class="badge-dark">Point-by-Point Response Revisi</span>
+      <span class="badge-dark">Penulisan Esai & Prosa</span>
+      <span class="badge-dark">Riset Akademik</span>
+      <span class="badge-dark">Kerja Remote Mandiri</span>
+      <span class="badge-dark">Manajemen Tenggat Waktu</span>
+    </div>
+  </div>
+</section>
+
+<div class="max-w-5xl mx-auto px-6"><div class="rule-full"></div></div>
+
+<!-- DOCUMENTS -->
+<section id="documents" class="max-w-5xl mx-auto px-6 py-16 grid sm:grid-cols-3 gap-10">
+  <div>
+    <h2 class="serif text-2xl" style="color:var(--navy)">Dokumen & Sertifikat</h2>
+    <p class="mt-3 text-sm" style="color:var(--navy-2)">Klik untuk membuka setiap dokumen di tab baru.</p>
+  </div>
+  <div class="sm:col-span-2 divide-y" style="border-color:rgba(14,32,54,.12)">
+    <a href="https://nursim621-lab.github.io/Portofolioeditor/doc-esai-beasiswa.html" target="_blank" class="flex items-center justify-between py-4 group">
+      <span>
+        <span class="block serif text-base" style="color:var(--navy)">Pengembangan SDM Menuju Indonesia Emas 2045</span>
+        <span class="block text-sm mt-0.5" style="color:var(--navy-2)">Esai Beasiswa Unggulan</span>
+      </span>
+      <span class="underline-grow text-sm shrink-0 ml-4" style="color:var(--gold)">Buka ↗</span>
+    </a>
+    <a href="https://nursim621-lab.github.io/Portofolioeditor/doc-sertifikat-ukbi.html" target="_blank" class="flex items-center justify-between py-4 group">
+      <span>
+        <span class="block serif text-base" style="color:var(--navy)">Sertifikat UKBI — Predikat Unggul</span>
+        <span class="block text-sm mt-0.5" style="color:var(--navy-2)">Skor 637, berlaku hingga Juli 2028</span>
+      </span>
+      <span class="underline-grow text-sm shrink-0 ml-4" style="color:var(--gold)">Buka ↗</span>
+    </a>
+    <a href="https://nursim621-lab.github.io/Portofolioeditor/doc-sertifikat-penulis.html" target="_blank" class="flex items-center justify-between py-4 group">
+      <span>
+        <span class="block serif text-base" style="color:var(--navy)">Sertifikat Penulis Terpilih</span>
+        <span class="block text-sm mt-0.5" style="color:var(--navy-2)">Medium Kata Batch 23 — Sebelum Benar-Benar Pulang</span>
+      </span>
+      <span class="underline-grow text-sm shrink-0 ml-4" style="color:var(--gold)">Buka ↗</span>
+    </a>
+    <a href="https://nursim621-lab.github.io/Portofolioeditor/doc-garis-start.html" target="_blank" class="flex items-center justify-between py-4 group">
+      <span>
+        <span class="block serif text-base" style="color:var(--navy)">Garis Start di Tanah Kelahiran</span>
+        <span class="block text-sm mt-0.5" style="color:var(--navy-2)">Contoh tulisan — cerpen</span>
+      </span>
+      <span class="underline-grow text-sm shrink-0 ml-4" style="color:var(--gold)">Buka ↗</span>
+    </a>
+    <a href="https://nursim621-lab.github.io/Portofolioeditor/doc-darussalam.html" target="_blank" class="flex items-center justify-between py-4 group">
+      <span>
+        <span class="block serif text-base" style="color:var(--navy)">Mahasiswa Darussalam Boleh Kere...</span>
+        <span class="block text-sm mt-0.5" style="color:var(--navy-2)">Contoh tulisan — esai opini</span>
+      </span>
+      <span class="underline-grow text-sm shrink-0 ml-4" style="color:var(--gold)">Buka ↗</span>
+    </a>
+  </div>
+</section>
+
+<div class="max-w-5xl mx-auto px-6"><div class="rule-full"></div></div>
+
+<!-- EDUCATION -->
+<section class="max-w-5xl mx-auto px-6 py-16 grid sm:grid-cols-3 gap-10">
+  <h2 class="serif text-2xl" style="color:var(--navy)">Pendidikan</h2>
+  <div class="sm:col-span-2 space-y-6 text-sm" style="color:var(--navy-2)">
+    <div>
+      <p class="serif text-base" style="color:var(--navy)">Magister, UIN Ar-Raniry, Banda Aceh</p>
+      <p class="mt-1">Sedang berlangsung — Fokus riset: fikih kontemporer / hukum Islam terapan</p>
+    </div>
+    <div>
+      <p class="serif text-base" style="color:var(--navy)">Sarjana, UIN Maulana Malik Ibrahim Malang</p>
+      <p class="mt-1">Lulus 2025 — IPK 3.61, Predikat Cumlaude</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="navy-block">
+  <div class="dot-grid"></div>
+  <div class="glow" style="width:360px;height:360px;background:var(--gold);opacity:.16;bottom:-140px;right:-80px"></div>
+  <div class="max-w-5xl mx-auto px-6 py-20 relative">
+    <h2 class="serif text-3xl sm:text-4xl max-w-md" style="color:var(--paper)">Mari berkolaborasi untuk naskah Anda.</h2>
+    <div class="mt-8 grid sm:grid-cols-3 gap-6 text-sm">
+      <a href="mailto:nursim621@gmail.com" class="underline-grow" style="color:var(--gold-soft)">nursim621@gmail.com</a>
+      <a href="tel:085372555320" class="underline-grow" style="color:var(--gold-soft)">0853-7255-5320</a>
+      <span style="color:#C7D2E0">Banda Aceh, Indonesia</span>
+    </div>
+  </div>
+  <div class="max-w-5xl mx-auto px-6 pb-10 text-xs relative" style="color:#8FA0B8">
+    © 2026 Muhammad Fadhil.
+  </div>
+</section>
+
+</body>
+</html>
